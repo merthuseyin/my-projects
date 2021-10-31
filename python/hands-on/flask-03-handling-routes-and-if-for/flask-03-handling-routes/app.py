@@ -40,7 +40,7 @@ def admin():
 
 @app.route("/greet_admin")
 def greet_admin():
-    return redirect(url_for('greet', name = 'Master Admin!!!'))
+    return redirect(url_for("greet", name = "Master Admin!!!"))
 
 @app.route("/<name>")
 def greeting(name):
